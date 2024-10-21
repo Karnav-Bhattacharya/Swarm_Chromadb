@@ -5,9 +5,9 @@ from swarm import Agent, Swarm
 from swarm.repl import run_demo_loop
 import os
 
-# Set your OpenAI API key
+# Please Enter your Openai api key here
 os.environ['OPENAI_API_KEY'] = 'Enter You Key Here'
-# Load and prepare data
+
 data = pd.read_csv('Emergency_contacts.csv')
 embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
 
@@ -46,7 +46,6 @@ def query_csv_agent(query):
     else:
         return {"response": "No relevant data found."}
 
-# Create CSV agent
 csv_agent = Agent(
     name="CSV Agent",
     instructions="You immediately help users query CSV data by finding relevant rows based on their input.",

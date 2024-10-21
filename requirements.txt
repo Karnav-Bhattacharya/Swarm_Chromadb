@@ -1,0 +1,4 @@
+chromadb
+pandas
+openpyxl
+sentence_transformers

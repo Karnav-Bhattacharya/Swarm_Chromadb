@@ -1,4 +1,4 @@
+git+https://github.com/openai/swarm.git
+sentence_transformers
 chromadb
 pandas
-openpyxl
-sentence_transformers

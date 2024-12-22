@@ -5,7 +5,7 @@ from swarm import Agent, Swarm
 from swarm.repl import run_demo_loop
 import os
 
-# Please Enter your Openai api key here
+# Enter your Openai api key here
 os.environ['OPENAI_API_KEY'] = 'Enter You Key Here'
 
 data = pd.read_csv('Emergency_contacts.csv')
